@@ -1,0 +1,4 @@
+#_demo:
+#    resource: "@JarvesPublicationBundle/Controller/Admin/Window/"
+#    type:     annotation
+#    prefix:   %jarves_admin_prefix%

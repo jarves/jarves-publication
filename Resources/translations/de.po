@@ -1,0 +1,232 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Jarves cms - publication\n"
+"PO-Revision-Date: 2011-12-06 00:01+0100\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+
+msgid "Cache html"
+msgstr "HTML Zwischenspeichern"
+
+msgid "Some templates does not support this. If you have troubles, just deactivate this."
+msgstr ""
+
+msgid "News"
+msgstr "News"
+
+msgid "News add"
+msgstr "News hinzufügen"
+
+msgid "News edit"
+msgstr "News bearbeiten"
+
+msgid "Category"
+msgstr "Kategorien"
+
+msgid "Add news category"
+msgstr "Kategorie hinzufügen"
+
+msgid "Edit news category"
+msgstr "Kategorie bearbeiten"
+
+msgid "Comments"
+msgstr "Kommentare"
+
+msgid "Edit comment"
+msgstr "Bearbeite Kommentare"
+
+msgid "Add comment"
+msgstr "Neuer Kommentar"
+
+msgid "News detail"
+msgstr "News ansicht"
+
+msgid "Template"
+msgstr "Template"
+
+msgid "Replace page title"
+msgstr "Ersetze Seitentitel"
+
+msgid "Allow comments"
+msgstr "Erlaube Kommentare"
+
+msgid "Max pages"
+msgstr "Max Seiten"
+
+msgid "Limit categories"
+msgstr "Begrenze Kategorien"
+
+msgid "News detail fixed"
+msgstr "Artikel im Detail fixiert"
+
+msgid "Article"
+msgstr "Artikel"
+
+msgid "Count per page"
+msgstr "Zähler pro Seite"
+
+msgid "News list"
+msgstr "News auflistung"
+
+msgid "Detailpage"
+msgstr "Detailseite"
+
+msgid "Sort by"
+msgstr "Sortieren nach"
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "Release date"
+msgstr "Erscheinungsdatum"
+
+msgid "News date"
+msgstr "News Datum"
+
+msgid "Enables Rss view on this page"
+msgstr "Aktiviere RSS-Ansicht auf dieser Seite"
+
+msgid "Rss feed template"
+msgstr "RSS-Feed template"
+
+msgid "News RSS Feed"
+msgstr "News RSS Feed"
+
+msgid "Maximum Items for rss feed"
+msgstr "höchtzulässige Items für RSS Feed"
+
+msgid "Category/s"
+msgstr "Kategorie/n"
+
+msgid "Category list (with Counts)"
+msgstr "Kategorien Auflistung (mit Zählung)"
+
+msgid "Page with list plugin"
+msgstr "Seite mit Aaflistungs-Plugin"
+
+msgid "Descending"
+msgstr "Absteigend"
+
+msgid "Ascending"
+msgstr "Aufsteigend"
+
+msgid "All entries"
+msgstr "Alle Einträge"
+
+msgid "back"
+msgstr "zurück"
+
+msgid "comments"
+msgstr "Kommentare"
+
+msgid "from"
+msgstr "von"
+
+msgid "says"
+msgstr "sagt"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Email"
+msgstr "E-Mail"
+
+msgid "Website"
+msgstr "Webseite"
+
+msgid "Send"
+msgstr "Gesendet"
+
+msgid "Invalid news item provided."
+msgstr "Ungueltiger News-Eintrag geliefert."
+
+msgid "div[class=publicationNewsListDefaultItemRealContent]"
+msgstr ""
+
+msgid "div[class=publicationNewsListDefaultItemContent]"
+msgstr ""
+
+msgid "a[class=publicationNewsListDefaultItemLink]"
+msgstr ""
+
+msgid "div[class=publicationNewsListDefaultItemMoreBg]"
+msgstr ""
+
+msgid "a"
+msgstr ""
+
+msgid "click"
+msgstr ""
+
+msgid "with tags"
+msgstr ""
+
+msgid "with no tags"
+msgstr ""
+
+msgid "read more"
+msgstr "mehr lesen"
+
+msgid "RSS-Feed"
+msgstr "RSS-Feed"
+
+msgid "General"
+msgstr "Allgemeines"
+
+msgid "Tags"
+msgstr "Anhänger"
+
+msgid "Intro image"
+msgstr "Einleitungssbild"
+
+msgid "Intro image 2"
+msgstr "Einleitungsbild 2"
+
+msgid "Access"
+msgstr "Zugriff"
+
+msgid "Release at"
+msgstr "Abgabe an"
+
+msgid "If you want to release the news now, let it empty"
+msgstr "Lasse dieses Feld leer, wenn die News sofort veröffentlicht werden soll"
+
+msgid "Hide"
+msgstr "Verstecken"
+
+msgid "Deactivate comments (override plugin properties)"
+msgstr "Deaktiviere Kommentare"
+
+msgid "Intro"
+msgstr "Einleitung"
+
+msgid "Content"
+msgstr "Inhalt"
+
+msgid "Files"
+msgstr "Ordner"
+
+msgid "Titel"
+msgstr "Titel"
+
+msgid "Url"
+msgstr ""
+
+msgid "E-Mail"
+msgstr ""
+
+msgid "IP"
+msgstr "IP"
+
+msgid "Created"
+msgstr "Eröffnet"
+
+msgid "Subject"
+msgstr "Betreff"
+
+msgid "Message"
+msgstr "Nachricht"
+

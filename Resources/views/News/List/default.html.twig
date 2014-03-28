@@ -1,0 +1,65 @@
+{{ loadAsset('@JarvesPublicationBundle/news/list/default.css') }}
+
+{% set publicationNavi %}
+    {% if maxPages > 1 %}
+    <div class="jarves-publication-navigation">
+        {% for i in page-3..page+3 %}
+            {% if i > 0 and i <= maxPages %}
+                {% if i == page %}
+                <span>{{ i }}</span>
+                {% else %}
+                <a href="{{ jarves.getCurrentPage()|url }}/{{ i }}">{{ i }}</a>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
+    {% endif %}
+{% endset %}
+
+{% if categoryTitle is defined %}
+    <h3 style="text-align: center; color: gray">All in category <i>{{ categoryTitle }}</i></h3>
+{% endif %}
+
+{{ publicationNavi }}
+
+<div class="jarves-publication-list">
+{% for item in items %}
+
+    {% block item %}
+    <div class="jarves-publication-list-item{% if loop.first %} first{% endif %}{% if loop.last %} last{% endif %}" >
+
+        <h2><a href="{{ options.detailPage|url }}/{{ item.uri }}" >{{ item.title }}</a></h2>
+
+        <div class="jarves-publication-list-item-intro">
+            {% if item.introimage %}
+                <img src="{{ item.introimage }}" class="jarves-publication-list-item-intro-image" />
+            {% endif %}
+            {{ item.intro | raw }}
+            <div style="clear: both;"></div>
+        </div>
+
+        <div class="jarves-publication-list-item-bottom">
+            <span class="jarves-publication-list-item-date">{{ item.newsDate|date("F d, Y") }}</span>
+            - <a href="{{ currentUrl() }}/category/{{ item.category.uri }}">{{ item.category.title }}</a>
+            {% if item.tags %}
+                {% trans %}with tags{% endtrans %} <span>{{ item.tags }}</span>
+            {% endif %}
+
+            <a href="{{ options.detailPage|url }}/{{ item.uri }}">{% trans %}read more{% endtrans %}</a>
+
+        </div>
+    </div>
+    {% endblock %}
+
+{% endfor %}
+</div>
+
+{{ publicationNavi }}
+
+{% if options.enableRss %}
+{% unsearchable %}
+<div class="publicationNewsListDefaultRss">
+     <a href="{$page|@realUrl}/publication_rss:1" class="publicationNewsListDefaultRssLink">[[RSS-Feed]]</a>
+</div>
+{% endunsearchable %}
+{% endif %}

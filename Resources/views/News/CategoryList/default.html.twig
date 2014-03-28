@@ -1,0 +1,10 @@
+<div class="jarves-publication-category-list">
+    <div>
+        <a href="{{ options.listPage|url }}">&raquo; {% trans %}All entries{% endtrans %}</a>
+    </div>
+    {% for category in categories %}
+    <div>
+        <a href="{{ options.listPage|url }}/category/{{ category.uri }}">&raquo; {{ category.title }} ({{ category.newsCount }})</a>
+    </div>
+    {% endfor %}
+</div>

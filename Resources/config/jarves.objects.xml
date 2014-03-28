@@ -1,0 +1,105 @@
+<config>
+  <bundle>
+    <objects>
+      <object id="News">
+        <label>Article</label>
+        <desc>Articles</desc>
+        <table>publication_news</table>
+        <labelField>title</labelField>
+        <multiLanguage>true</multiLanguage>
+        <workspace>true</workspace>
+        <fields>
+          <field id="id" type="number" required="true" primaryKey="true" autoIncrement="true">
+            <label>Id</label>
+          </field>
+          <field id="title" type="text" required="true">
+            <label>Title</label>
+          </field>
+          <field id="uri" type="text" />
+          <field id="category" type="object">
+            <label>Category</label>
+            <object>JarvesPublicationBundle/NewsCategory</object>
+            <objectRelation>nTo1</objectRelation>
+          </field>
+          <field id="files" type="text">
+            <label>Attachments</label>
+          </field>
+          <field id="lang" type="lang">
+            <label>Language</label>
+          </field>
+          <field id="intro" type="wysiwyg"/>
+          <field id="content" type="contentElements"/>
+          <field id="created" type="number">
+            <label>Created</label>
+          </field>
+          <field id="modified" type="number">
+            <label>Modified</label>
+          </field>
+          <field id="releaseAt" type="datetime">
+            <label>Release at</label>
+            <desc>Let it empty to release it now</desc>
+          </field>
+          <field id="newsDate" type="datetime">
+            <label>Actual news date</label>
+          </field>
+          <field id="deactivate" type="checkbox">
+            <label>Hide</label>
+          </field>
+          <field id="deactivateComments" type="checkbox">
+            <label>Deactivate comments</label>
+          </field>
+          <field id="commentsCount" type="number">
+            <label>Comments count</label>
+          </field>
+          <field id="tags" type="text">
+            <label>Tags</label>
+          </field>
+          <field id="introimage" type="text"/>
+        </fields>
+        <browserColumns>
+          <field id="title" type="text">
+            <label>Title</label>
+          </field>
+          <field id="category" type="predefined">
+          </field>
+        </browserColumns>
+      </object>
+      <object id="NewsCategory">
+        <label>Article category</label>
+        <table>publication_news_category</table>
+        <labelField>title</labelField>
+        <workspace>true</workspace>
+        <fields>
+          <field id="id" type="number" primaryKey="true" autoIncrement="true"/>
+          <field id="title" type="text" required="true">
+            <label>Title</label>
+          </field>
+          <field id="uri" type="text" />
+        </fields>
+        <browserColumns>
+          <field id="title" type="text"/>
+        </browserColumns>
+      </object>
+      <object id="NewsComment">
+        <label>Comment</label>
+        <table>publication_news_comment</table>
+        <labelField>id</labelField>
+        <fields>
+          <field id="id" type="number" primaryKey="true" autoIncrement="true">
+            <label>ID</label>
+          </field>
+          <field id="author" type="text"/>
+          <field id="message" type="textarea"/>
+          <field id="created" type="datetime">
+            <label>Created</label>
+          </field>
+          <field id="removed" type="checkbox"/>
+        </fields>
+        <browserColumns>
+          <field id="id" type="text"/>
+          <field id="author" type="text"/>
+        </browserColumns>
+      </object>
+    </objects>
+  </bundle>
+</config>

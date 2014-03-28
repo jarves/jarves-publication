@@ -1,0 +1,51 @@
+<config>
+  <bundle>
+    <plugins>
+      <plugin id="listing">
+        <label>News Listing</label>
+        <class>Jarves\Publication\Controller\Plugin\News</class>
+        <method>listing</method>
+        <routes>
+          <route pattern="{page}">
+            <default key="page">1</default>
+            <requirement key="page">^[2-9]+[1-9]*$</requirement>
+          </route>
+          <route pattern="{slug}">
+            <requirement key="slug">[^/]+</requirement>
+          </route>
+        </routes>
+        <options>
+          <field id="template" type="view">
+            <label>Template</label>
+            <options>
+              <option key="directory">@JarvesPublicationBundle:News:List</option>
+            </options>
+          </field>
+          <field id="itemsPerPage" type="number">
+            <label>Items per page</label>
+            <default>10</default>
+          </field>
+          <field id="detailPage" type="object">
+            <label>Detail page</label>
+            <object>JarvesBundle:Node</object>
+          </field>
+        </options>
+      </plugin>
+      <plugin id="detail">
+        <label>News Detail</label>
+        <class>Jarves\Publication\Controller\Plugin\News</class>
+        <method>detail</method>
+        <routes>
+          <route pattern="{slug}">
+            <requirement key="page">[^/]+</requirement>
+          </route>
+        </routes>
+      </plugin>
+      <plugin id="categoryList">
+        <label>News category list</label>
+        <class>Jarves\Publication\Controller\Plugin\News</class>
+        <method>categoryList</method>
+    </plugin>
+  </plugins>
+</bundle>
+</config>

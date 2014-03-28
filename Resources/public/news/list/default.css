@@ -1,0 +1,16 @@
+.jarves-publication-list-item-intro {
+    padding: 10px 0;
+}
+
+.jarves-publication-list-item-date {
+    color: silver;
+}
+
+.jarves-publication-list-item {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.jarves-publication-list-item:first-child {
+    border-top: 0;
+}

@@ -1,0 +1,213 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"PO-Revision-Date: 2012-04-12 05:47+0200\n"
+
+
+msgid "Cache html"
+msgstr ""
+
+msgid "Some templates does not support this. If you have troubles, just deactivate this."
+msgstr ""
+
+msgid "Articles"
+msgstr ""
+
+msgid "Add"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "Category"
+msgstr ""
+
+msgid "Comments"
+msgstr ""
+
+msgid "Article detail"
+msgstr ""
+
+msgid "Template"
+msgstr ""
+
+msgid "Replace page title"
+msgstr ""
+
+msgid "Allow comments"
+msgstr ""
+
+msgid "Max pages"
+msgstr ""
+
+msgid "Limit categories"
+msgstr ""
+
+msgid "News detail fixed"
+msgstr ""
+
+msgid "Article"
+msgstr ""
+
+msgid "Count per page"
+msgstr ""
+
+msgid "News list"
+msgstr ""
+
+msgid "Detailpage"
+msgstr ""
+
+msgid "Sort by"
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "Release date"
+msgstr ""
+
+msgid "News date"
+msgstr ""
+
+msgid "Descending"
+msgstr ""
+
+msgid "Ascending"
+msgstr ""
+
+msgid "Enables Rss view on this page"
+msgstr ""
+
+msgid "Rss feed template"
+msgstr ""
+
+msgid "News RSS Feed"
+msgstr ""
+
+msgid "Maximum Items for rss feed"
+msgstr ""
+
+msgid "Category\/s"
+msgstr ""
+
+msgid "Category list (with Counts)"
+msgstr ""
+
+msgid "Page with list plugin"
+msgstr ""
+
+msgid "Id"
+msgstr ""
+
+msgid "Release at"
+msgstr ""
+
+msgid "Hide"
+msgstr ""
+
+msgid "Deactivate comments"
+msgstr ""
+
+msgid "Comments count"
+msgstr ""
+
+msgid "News"
+msgstr ""
+
+msgid "Article categories"
+msgstr ""
+
+msgid "URL"
+msgstr ""
+
+msgid "Language"
+msgstr ""
+
+msgid "General"
+msgstr ""
+
+msgid "All entries"
+msgstr ""
+
+msgid "back"
+msgstr ""
+
+msgid "comments"
+msgstr ""
+
+msgid "from"
+msgstr ""
+
+msgid "says"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Website"
+msgstr ""
+
+msgid "Send"
+msgstr ""
+
+msgid "Invalid news item provided."
+msgstr ""
+
+msgid "with tags"
+msgstr ""
+
+msgid "with no tags"
+msgstr ""
+
+msgid "read more"
+msgstr ""
+
+msgid "RSS-Feed"
+msgstr ""
+
+msgid "Titel"
+msgstr ""
+
+msgid "Tags"
+msgstr ""
+
+msgid "introimage"
+msgstr ""
+
+msgid "Intro image 2"
+msgstr ""
+
+msgid "Access"
+msgstr ""
+
+msgid "If you want to release the news now, let it empty"
+msgstr ""
+
+msgid "Deactivate comments (override plugin properties)"
+msgstr ""
+
+msgid "Intro"
+msgstr ""
+
+msgid "Content"
+msgstr ""
+
+msgid "Files"
+msgstr ""
+
+msgid "Url"
+msgstr ""
+
+msgid "E-Mail"
+msgstr ""
+
+msgid "Subject"
+msgstr ""
+
+msgid "Message"
+msgstr ""
+
