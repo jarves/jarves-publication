@@ -52,7 +52,7 @@ class NewsCrudController extends \Jarves\Controller\WindowController {
     'children' => array (
       'intro' => array (
         'label' => 'Intro',
-        'type' => 'wysiwyg',
+        'type' => 'contentElements',
         'preset' => 'simple',
       ),
     ),
@@ -63,7 +63,7 @@ class NewsCrudController extends \Jarves\Controller\WindowController {
     'children' => array (
       'content' => array (
         'label' => 'Content',
-        'type' => 'wysiwyg',
+        'type' => 'contentElements',
       ),
     ),
   ),
