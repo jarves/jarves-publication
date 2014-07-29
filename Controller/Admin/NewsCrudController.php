@@ -16,10 +16,10 @@ class NewsCrudController extends \Jarves\Controller\WindowController {
       ),
       'category' => array (
         'label' => 'Category',
-        'type' => 'object',
+        'type' => 'select',
         'object' => 'JarvesPublicationBundle:NewsCategory',
         'objectRelation' => 'nTo1',
-        'objectRelationName' => 'category',
+        'objectRelationName' => 'category'
       ),
       'tags' => array (
         'type' => 'text',
@@ -85,8 +85,8 @@ class NewsCrudController extends \Jarves\Controller\WindowController {
   ),
 );
 
-    public $itemLayout = '{title}
-{if newsDate}<div class="sub">{newsDate}</div>{/if}';
+    public $itemLayout = '{{title}}
+{%if newsDate%}<div class="sub">{{newsDate}}</div>{%endif%}';
 
     public $defaultLimit = 15;
 

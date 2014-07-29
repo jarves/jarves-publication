@@ -6,7 +6,7 @@ use Jarves\Publication\Model\Base\NewsCategoryQuery as BaseNewsCategoryQuery;
 
 
 /**
- * Skeleton subclass for performing query and update operations on the 'publication_news_category' table.
+ * Skeleton subclass for performing query and update operations on the 'jarves_publication_news_category' table.
  *
  *
  *

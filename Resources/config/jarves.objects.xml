@@ -15,7 +15,7 @@
           <field id="title" type="text" required="true">
             <label>Title</label>
           </field>
-          <field id="uri" type="text" />
+          <field id="uri" type="text"/>
           <field id="category" type="object">
             <label>Category</label>
             <object>JarvesPublicationBundle/NewsCategory</object>
@@ -27,7 +27,7 @@
           <field id="lang" type="lang">
             <label>Language</label>
           </field>
-          <field id="intro" type="wysiwyg"/>
+          <field id="intro" type="contentElements"/>
           <field id="content" type="contentElements"/>
           <field id="created" type="number">
             <label>Created</label>
@@ -60,21 +60,23 @@
           <field id="title" type="text">
             <label>Title</label>
           </field>
-          <field id="category" type="predefined">
-          </field>
+          <field id="category" type="predefined"/>
         </browserColumns>
       </object>
-      <object id="NewsCategory">
+      <object id="NewsCategory" crossRef="false">
         <label>Article category</label>
         <table>publication_news_category</table>
         <labelField>title</labelField>
         <workspace>true</workspace>
+        <listEntryPoint>JarvesPublicationBundle/category</listEntryPoint>
+        <editEntryPoint>JarvesPublicationBundle/category</editEntryPoint>
+        <addEntryPoint>JarvesPublicationBundle/category</addEntryPoint>
         <fields>
           <field id="id" type="number" primaryKey="true" autoIncrement="true"/>
           <field id="title" type="text" required="true">
             <label>Title</label>
           </field>
-          <field id="uri" type="text" />
+          <field id="uri" type="text"/>
         </fields>
         <browserColumns>
           <field id="title" type="text"/>

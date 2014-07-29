@@ -6,7 +6,7 @@ use Jarves\Publication\Model\Base\NewsQuery as BaseNewsQuery;
 
 
 /**
- * Skeleton subclass for performing query and update operations on the 'publication_news' table.
+ * Skeleton subclass for performing query and update operations on the 'jarves_publication_news' table.
  *
  *
  *

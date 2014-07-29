@@ -3,7 +3,8 @@
 namespace Jarves\Publication;
 
 use Jarves\Jarves;
-use Jarves\Publication\Model\NewsContentContents;
+use Jarves\Publication\Model\NewsContent;
+use Jarves\Publication\Model\NewsIntro;
 
 class PackageManager
 {
@@ -21,12 +22,14 @@ class PackageManager
         $news->setNewsDate(time() - 159);
         $news->setCategory($category);
         $news->setTags('first, item, awesome');
-        $news->setIntro(
+        $content = new NewsIntro();
+        $content->setContent(
             'Lorem ipsum dolor sit <b>amet</b>, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
             labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
         );
+        $news->addIntro($content);
 
-        $content = new NewsContentContents();
+        $content = new NewsContent();
         $content->setContent('<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
             labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
             clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
@@ -71,13 +74,15 @@ class PackageManager
         $news->setNewsDate(time());
         $news->setCategory($category);
         $news->setTags('first, item, awesome');
-        $news->setIntro(
+        $content = new NewsIntro();
+        $content->setContent(
             'At vero eos et accusam et justo duo dolores et ea rebum. Stet
             clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
             sadipscing elitr, sed diam nonumy eirmod.'
         );
+        $news->addIntro($content);
 
-        $content = new NewsContentContents();
+        $content = new NewsContent();
         $content->setContent('<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
             labore et dolore magna aliquyam erat, sed diam voluptua.
             tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>

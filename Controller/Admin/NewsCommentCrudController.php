@@ -36,8 +36,8 @@ class NewsCommentCrudController extends \Jarves\Controller\WindowController {
   ),
 );
 
-    public $itemLayout = '#{id} {author}<br />
-<span class="sub">{created}</span>';
+    public $itemLayout = '#{{id}} {{author}}<br />
+<span class="sub">{{created}}</span>';
 
     public $add = true;
 
@@ -53,7 +53,7 @@ class NewsCommentCrudController extends \Jarves\Controller\WindowController {
 
     public $export = false;
 
-    public $object = 'jarvespublication:newscomment';
+    public $object = 'jarvespublication/newsComment';
 
     public $preview = false;
 

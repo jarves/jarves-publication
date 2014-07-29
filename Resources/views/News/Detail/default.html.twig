@@ -14,12 +14,12 @@
                 {% if item.introimage %}
                     <img src="{{ item.introimage }}" class="jarves-publication-item-intro-image"/>
                 {% endif %}
-                {{ item.intro | raw }}
+                {{ item.intros | renderContents | raw }}
                 <div style="clear: both;"></div>
             </div>
 
             <div class="jarves-publication-item-content">
-                {{ item.contents | renderContents }}
+                {{ item.contents | renderContents | raw }}
             </div>
 
             <div class="jarves-publication-item-bottom">

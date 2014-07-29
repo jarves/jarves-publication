@@ -6,7 +6,7 @@ use Jarves\Publication\Model\Base\NewsCommentQuery as BaseNewsCommentQuery;
 
 
 /**
- * Skeleton subclass for performing query and update operations on the 'publication_news_comment' table.
+ * Skeleton subclass for performing query and update operations on the 'jarves_publication_news_comment' table.
  *
  *
  *

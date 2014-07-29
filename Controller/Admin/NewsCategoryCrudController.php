@@ -26,7 +26,7 @@ class NewsCategoryCrudController extends \Jarves\Controller\WindowController  {
   ),
 );
 
-    public $itemLayout = '{title}';
+    public $itemLayout = '{{title}}';
 
     public $add = true;
 

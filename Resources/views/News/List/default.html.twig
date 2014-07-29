@@ -34,7 +34,7 @@
             {% if item.introimage %}
                 <img src="{{ item.introimage }}" class="jarves-publication-list-item-intro-image" />
             {% endif %}
-            {{ item.intro | raw }}
+            {{ item.intros | renderContents | raw }}
             <div style="clear: both;"></div>
         </div>
 
