@@ -145,7 +145,7 @@ class News extends PluginController
                     ->withColumn('COUNT(News.Id)', 'newsCount')
                     ->groupById()
                     ->find()
-                    ->toArray(null, null, TableMap::TYPE_STUDLYPHPNAME);
+                    ->toArray(null, null, TableMap::TYPE_CAMELNAME);
 
                 return array(
                     'categories' => $categories,

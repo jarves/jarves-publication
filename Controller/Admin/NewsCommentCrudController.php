@@ -2,7 +2,7 @@
 
 namespace Jarves\Publication\Controller\Admin;
 
-class NewsCommentCrudController extends \Jarves\Controller\WindowController {
+class NewsCommentCrudController extends \Jarves\Controller\ObjectCrudController {
 
     public $fields = array (
   '__General__' => array (

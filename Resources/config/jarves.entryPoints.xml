@@ -1,16 +1,13 @@
 <config>
   <bundle>
     <entryPoints>
-      <entryPoint path="news" type="combine" icon="#icon-newspaper" link="true" multi="true">
-        <class>Jarves\Publication\Controller\Admin\NewsCrudController</class>
+      <entryPoint path="news" object="jarvespublication/news" type="combine" icon="#icon-newspaper" link="true" multi="true">
         <label>Articles</label>
       </entryPoint>
-      <entryPoint path="category" type="combine" system="true" icon="#icon-drawer-3" link="true" multi="true">
-        <class>Jarves\Publication\Controller\Admin\NewsCategoryCrudController</class>
+      <entryPoint path="category" object="jarvespublication/newsCategory" type="combine" system="true" icon="#icon-drawer-3" link="true" multi="true">
         <label>Categories</label>
       </entryPoint>
-      <entryPoint path="comments" type="combine" icon="#icon-comments-2" link="true" multi="true">
-        <class>Jarves\Publication\Controller\Admin\NewsCommentCrudController</class>
+      <entryPoint path="comments" object="jarvespublication/newsComment" type="combine" icon="#icon-comments-2" link="true" multi="true">
         <label>Comments</label>
       </entryPoint>
     </entryPoints>

@@ -4,6 +4,7 @@
       <object id="News">
         <label>Article</label>
         <desc>Articles</desc>
+        <apiController>@JarvesPublicationBundle/Controller/Admin/NewsCrudController.php</apiController>
         <table>publication_news</table>
         <labelField>title</labelField>
         <multiLanguage>true</multiLanguage>
@@ -67,6 +68,7 @@
         <label>Article category</label>
         <table>publication_news_category</table>
         <labelField>title</labelField>
+        <apiController>@JarvesPublicationBundle/Controller/Admin/NewsCategoryCrudController.php</apiController>
         <workspace>true</workspace>
         <listEntryPoint>JarvesPublicationBundle/category</listEntryPoint>
         <editEntryPoint>JarvesPublicationBundle/category</editEntryPoint>
@@ -84,6 +86,7 @@
       </object>
       <object id="NewsComment">
         <label>Comment</label>
+        <apiController>@JarvesPublicationBundle/Controller/Admin/NewsCommentCrudController.php</apiController>
         <table>publication_news_comment</table>
         <labelField>id</labelField>
         <fields>
