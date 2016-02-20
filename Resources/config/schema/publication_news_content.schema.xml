@@ -1,0 +1,31 @@
+<database namespace="Jarves\Publication\Model" name="default">
+  <table name="publication_news_content" phpName="NewsContent">
+    <column name="id" type="INTEGER" primaryKey="true" autoIncrement="true"/>
+    <column name="foreign_id" type="INTEGER"/>
+    <column name="slot_id" type="INTEGER"/>
+    <column name="sort" type="INTEGER"/>
+    <column name="content" type="LONGVARCHAR"/>
+    <column name="template" type="LONGVARCHAR"/>
+    <column name="type" type="VARCHAR" size="255"/>
+    <column name="hide" type="BOOLEAN"/>
+    <column name="unsearchable" type="BOOLEAN"/>
+    <column name="access_from" type="BIGINT"/>
+    <column name="access_to" type="BIGINT"/>
+    <column name="access_from_groups" type="VARCHAR" size="255"/>
+    <foreign-key phpName="ForeignObject" foreignTable="publication_news" refPhpName="Content" onDelete="cascade" onUpdate="cascade">
+      <reference local="foreign_id" foreign="id"/>
+      <reference local="workspace_id" foreign="workspace_id"/>
+    </foreign-key>
+    <behavior name="nested_set">
+      <parameter name="left_column" value="lft"/>
+      <parameter name="right_column" value="rgt"/>
+      <parameter name="level_column" value="lvl"/>
+      <parameter name="use_scope" value="true"/>
+      <parameter name="scope_column" value="foreign_id"/>
+    </behavior>
+    <behavior name="Jarves\Propel\Behavior\WorkspaceBehavior"/>
+    <vendor type="mysql">
+      <parameter name="Charset" value="utf8"/>
+    </vendor>
+  </table>
+</database>

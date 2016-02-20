@@ -1,0 +1,12 @@
+<database namespace="Jarves\Publication\Model" name="default">
+  <table name="publication_news_comment" phpName="NewsComment">
+    <column name="id" type="INTEGER" primaryKey="true" autoIncrement="true"/>
+    <column name="author" type="VARCHAR" size="255"/>
+    <column name="message" type="LONGVARCHAR"/>
+    <column name="created" type="BIGINT"/>
+    <column name="removed" type="BOOLEAN"/>
+    <vendor type="mysql">
+      <parameter name="Charset" value="utf8"/>
+    </vendor>
+  </table>
+</database>
