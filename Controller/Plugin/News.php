@@ -28,9 +28,14 @@ class News extends PluginController
                 'detailPage' => false,
                 'detailView' => true,
                 'enableRss' => false,
+                'template' => null,
                 'detailOptions' => []
             ]
         );
+
+        if (null === $options['template']) {
+            return null;
+        }
 
         if ($slug) {
             if ($options['detailView']) {
