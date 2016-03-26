@@ -18,7 +18,7 @@
           <field id="template" type="view">
             <label>Template</label>
             <options>
-              <option key="directory">@JarvesPublicationBundle:News:List</option>
+              <option key="directory">@JarvesPublicationBundle:News/List</option>
             </options>
           </field>
           <field id="itemsPerPage" type="number">
