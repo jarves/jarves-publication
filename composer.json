@@ -2,13 +2,13 @@
     "name": "jarves/publication-bundle",
     "description": "A small news and blog system.",
     "keywords": ["News", "Blog"],
-    "license": "GPL",
-    "homepage": "http://www.jarves.io/",
+    "license": "LGPL-3.0",
+    "homepage": "http:\/\/jarves.io\/",
     "authors": [
         {
-            "name": "MArc J. Schmidt",
-            "homepage": "https://github.com/MArcJ",
-            "email": "marc@jarves.io"
+            "name": "Marc J. Schmidt",
+            "homepage": "http://marcjschmidt.de",
+            "email": "marc@marcjschmidt.de"
         }
     ],
     "target-dir": "Jarves/Publication",
