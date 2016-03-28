@@ -28,7 +28,7 @@
     {% block item %}
     <div class="jarves-publication-list-item{% if loop.first %} first{% endif %}{% if loop.last %} last{% endif %}" >
 
-        <h2><a href="{{ options.detailPage|url }}/{{ item.uri }}" >{{ item.title }}</a></h2>
+        <h2><a href="{{ options.detailPage|url|default(currentUrl()) }}/{{ item.uri }}" >{{ item.title }}</a></h2>
 
         <div class="jarves-publication-list-item-intro">
             {% if item.introimage %}
@@ -45,7 +45,7 @@
                 {% trans %}with tags{% endtrans %} <span>{{ item.tags }}</span>
             {% endif %}
 
-            <a href="{{ options.detailPage|url }}/{{ item.uri }}">{% trans %}read more{% endtrans %}</a>
+            <a href="{{ options.detailPage|url|default(currentUrl()) }}/{{ item.uri }}">{% trans %}read more{% endtrans %}</a>
 
         </div>
     </div>
