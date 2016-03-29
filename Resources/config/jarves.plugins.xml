@@ -1,7 +1,7 @@
 <config>
   <bundle>
     <plugins>
-      <plugin id="listing">
+      <plugin id="listing" preview="true">
         <label>News Listing</label>
         <class>Jarves\Publication\Controller\Plugin\News</class>
         <method>listing</method>
@@ -41,7 +41,7 @@
           </route>
         </routes>
       </plugin>
-      <plugin id="categoryList">
+      <plugin id="categoryList" preview="true">
         <label>News category list</label>
         <class>Jarves\Publication\Controller\Plugin\News</class>
         <method>categoryList</method>
