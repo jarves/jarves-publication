@@ -1,0 +1,72 @@
+fields:
+    __General__:
+        label: General
+        type: tab
+        children:
+            title:
+                label: Title
+                type: text
+                required: 'true'
+            category:
+                label: Category
+                type: select
+                object: 'JarvesPublicationBundle:NewsCategory'
+                objectRelation: nTo1
+                objectRelationName: category
+            tags:
+                type: text
+                label: Tags
+            newsDate:
+                type: datetime
+                label: 'Actual news date'
+            releaseAt:
+                type: datetime
+                label: 'Release at'
+                desc: '[[Let it empty to release it immediately.]]'
+            deactivate:
+                type: checkbox
+                label: Hide
+                empty: '1'
+            deactivatecomments:
+                type: checkbox
+                label: 'Deactivate comments'
+                empty: '1'
+    __Intro__:
+        label: Intro
+        type: tab
+        children:
+            intro:
+                label: Intro
+                type: contentElements
+                preset: simple
+    __Content__:
+        label: Content
+        type: tab
+        children:
+            content:
+                label: Content
+                type: contentElements
+columns:
+    title:
+        type: text
+        label: Title
+    category.title:
+        label: Category
+        type: object
+    newsDate:
+        type: datetime
+        label: Date
+        width: '150'
+
+object: jarvespublication/news
+
+itemLayout: "{{title}}\n{%if newsDate%}<div class=\"sub\">{{newsDate}}</div>{%endif%}"
+defaultLimit: 15
+order:
+    title: asc
+add: true
+edit: true
+remove: true
+titleField: Article
+multiLanguage: true
+multiDomain: false

@@ -2,7 +2,6 @@
 
 namespace Jarves\Publication\Controller\Plugin;
 
-use Jarves\PluginResponse;
 use Propel\Runtime\Map\TableMap;
 use Jarves\Publication\Model\NewsCategoryQuery;
 use Jarves\Publication\Model\NewsQuery;

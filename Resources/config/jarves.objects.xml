@@ -4,7 +4,7 @@
       <object id="News">
         <label>Article</label>
         <desc>Articles</desc>
-        <apiController>@JarvesPublicationBundle/Controller/Admin/NewsCrudController.php</apiController>
+        <apiControllerDefinition>@JarvesPublicationBundle/Resources/config/crud/News.yml</apiControllerDefinition>
         <table>publication_news</table>
         <labelField>title</labelField>
         <multiLanguage>true</multiLanguage>
@@ -61,14 +61,14 @@
           <field id="title" type="text">
             <label>Title</label>
           </field>
-          <field id="category" type="predefined"/>
+          <field id="category" type="select"/>
         </browserColumns>
       </object>
       <object id="NewsCategory" crossRef="false">
         <label>Article category</label>
         <table>publication_news_category</table>
         <labelField>title</labelField>
-        <apiController>@JarvesPublicationBundle/Controller/Admin/NewsCategoryCrudController.php</apiController>
+        <apiControllerDefinition>@JarvesPublicationBundle/Resources/config/crud/NewsCategory.yml</apiControllerDefinition>
         <workspace>true</workspace>
         <listEntryPoint>JarvesPublicationBundle/category</listEntryPoint>
         <editEntryPoint>JarvesPublicationBundle/category</editEntryPoint>
@@ -86,7 +86,7 @@
       </object>
       <object id="NewsComment">
         <label>Comment</label>
-        <apiController>@JarvesPublicationBundle/Controller/Admin/NewsCommentCrudController.php</apiController>
+        <apiControllerDefinition>@JarvesPublicationBundle/Resources/config/crud/NewsComment.yml</apiControllerDefinition>
         <table>publication_news_comment</table>
         <labelField>id</labelField>
         <fields>

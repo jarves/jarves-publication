@@ -1,10 +1,9 @@
 <config>
   <bundle>
     <plugins>
-      <plugin id="listing">
+      <plugin id="listing" preview="true">
         <label>News Listing</label>
-        <class>Jarves\Publication\Controller\Plugin\News</class>
-        <method>listing</method>
+        <controller>Jarves\Publication\Controller\Plugin\News::listing</controller>
         <routes>
           <route pattern="{page}">
             <default key="page">1</default>
@@ -33,18 +32,16 @@
       </plugin>
       <plugin id="detail">
         <label>News Detail</label>
-        <class>Jarves\Publication\Controller\Plugin\News</class>
-        <method>detail</method>
+        <controller>Jarves\Publication\Controller\Plugin\News::detail</controller>
         <routes>
           <route pattern="{slug}">
             <requirement key="page">[^/]+</requirement>
           </route>
         </routes>
       </plugin>
-      <plugin id="categoryList">
+      <plugin id="categoryList" preview="true">
         <label>News category list</label>
-        <class>Jarves\Publication\Controller\Plugin\News</class>
-        <method>categoryList</method>
+        <controller>Jarves\Publication\Controller\Plugin\News::categoryList</controller>
     </plugin>
   </plugins>
 </bundle>

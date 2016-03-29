@@ -1,0 +1,28 @@
+fields:
+    __General__:
+        label: General
+        type: tab
+        children:
+            author:
+                label: Author
+                type: text
+            message:
+                label: Message
+                type: textarea
+columns:
+    id:
+        label: ID
+        type: text
+    author:
+        label: Author
+        type: text
+    created:
+        label: Created
+        type: datetime
+itemLayout: "#{{id}} {{author}}<br />\n<span class=\"sub\">{{created}}</span>"
+add: true
+edit: true
+remove: true
+object: jarvespublication/newsComment
+multiLanguage: false
+multiDomain: false

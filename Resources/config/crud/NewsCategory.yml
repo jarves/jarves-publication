@@ -1,0 +1,20 @@
+fields:
+    __General__:
+        label: General
+        type: tab
+        children:
+            title:
+                label: Title
+                options:
+                    modifier: ''
+                type: text
+columns:
+    title:
+        type: text
+itemLayout: '{{title}}'
+add: true
+edit: true
+remove: true
+object: jarvespublication/newsCategory
+titleField: title
+multiLanguage: false
