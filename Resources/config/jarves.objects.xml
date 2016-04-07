@@ -4,7 +4,7 @@
       <object id="News">
         <label>Article</label>
         <desc>Articles</desc>
-        <apiControllerDefinition>@JarvesPublicationBundle/Resources/config/crud/News.yml</apiControllerDefinition>
+        <apiControllerDefinition>@JarvesPublicationBundle/Resources/config/crud/news.yml</apiControllerDefinition>
         <table>publication_news</table>
         <labelField>title</labelField>
         <multiLanguage>true</multiLanguage>
@@ -68,7 +68,7 @@
         <label>Article category</label>
         <table>publication_news_category</table>
         <labelField>title</labelField>
-        <apiControllerDefinition>@JarvesPublicationBundle/Resources/config/crud/NewsCategory.yml</apiControllerDefinition>
+        <apiControllerDefinition>@JarvesPublicationBundle/Resources/config/crud/newsCategory.yml</apiControllerDefinition>
         <workspace>true</workspace>
         <listEntryPoint>JarvesPublicationBundle/category</listEntryPoint>
         <editEntryPoint>JarvesPublicationBundle/category</editEntryPoint>
@@ -86,7 +86,7 @@
       </object>
       <object id="NewsComment">
         <label>Comment</label>
-        <apiControllerDefinition>@JarvesPublicationBundle/Resources/config/crud/NewsComment.yml</apiControllerDefinition>
+        <apiControllerDefinition>@JarvesPublicationBundle/Resources/config/crud/newsComment.yml</apiControllerDefinition>
         <table>publication_news_comment</table>
         <labelField>id</labelField>
         <fields>
