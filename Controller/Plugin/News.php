@@ -107,8 +107,8 @@ class News extends PluginController
             function () use ($slug, $options) {
                 $item = NewsQuery::create()
                     ->joinCategory()
-                    ->leftJoinContent()
-                    ->findOneBySlug($slug);
+                    ->filterBySlug($slug)
+                    ->findOne();
 
                 if (!$item) {
                     return null;
