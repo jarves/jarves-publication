@@ -27,7 +27,7 @@ fields:
                 type: checkbox
                 label: Hide
                 empty: '1'
-            deactivatecomments:
+            deactivateComments:
                 type: checkbox
                 label: 'Deactivate comments'
                 empty: '1'
